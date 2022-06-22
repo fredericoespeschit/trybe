@@ -32,3 +32,18 @@ if(e > f && e > g){
     console.log(g)
 }
 
+//4 - Resposta
+//positivo: 1, 2, 3, 4...
+//negativo: -1, -2, -3, -4...
+//zero: 0
+
+const h = 0;
+
+if(h < 0){
+    console.log("negative")
+} else if(h > 0){
+    console.log("positive")
+} else {
+    console.log("zero")
+}
+
