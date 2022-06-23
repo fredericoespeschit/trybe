@@ -2,7 +2,6 @@
 const a = 10;
 const b = 50;
 
-//Adição
 console.log(a+b);
 console.log(a-b);
 console.log(a*b);
@@ -117,3 +116,64 @@ if (nota < 0 || nota >= 100) {
 } else if( nota < 49){
     console.log('F');
 } 
+
+//8 - Resposta
+
+const i = 3;
+const j = 5;
+const l = 1;
+
+if (i % 2 == 0 || j % 2 == 0 || l % 2 == 0 ){
+    console.log(true)
+} 
+
+//9 - Resposta
+const m = 2;
+const n = 4;
+const o = 6;
+
+if (m % 2 == 1 || n % 2 == 1 || o % 2 == 1 ){
+    console.log(true)
+} 
+
+//10 - Resposta
+const custoProduto = 1;
+const impostoSobreOCusto = custoProduto * 1.20;
+const valorVenda = 3;
+const quantidade = 1000;
+
+if (custoProduto >= 0 && valorVenda >= 0){
+    const lucro = valorVenda - impostoSobreOCusto;
+    const total = lucro * quantidade;
+    console.log(total);
+} else {
+    console.log('valores de entrada não podem ser menor que zero')
+}
+
+
+//11 - Respostas
+const salarioBruto = 3000;
+
+//INSS
+if (salarioBruto <= 1556.94){
+    console.log('INSS: ' + salarioBruto * 0.08);
+} else if (salarioBruto >= 1556.95 && salarioBruto <= 2594.92){
+    console.log('INSS: ' + salarioBruto * 0.09);
+} else if (salarioBruto >= 2594.93 && salarioBruto <= 5189.82){
+    console.log('INSS: ' + salarioBruto * 0.11);
+} else if(salarioBruto <= 5189.82){
+    console.log('INSS: ' + salarioBruto - 570,88);
+}
+
+//IR
+if (salarioBruto <= 1903.98){
+    console.lof('isento de imposto de renda');
+} else if (salarioBruto >= 1903.99 && salarioBruto <= 2826.65){
+    console.log('IR: ' + salarioBruto * 0.75);
+} else if (salarioBruto >= 2826.66 && salarioBruto <= 3751.05){
+    console.log('IR: ' + salarioBruto * 0.15)
+} else if (salarioBruto >= 3751.06 && salarioBruto <= 4664.68){
+    console.log('IR: ' + salarioBruto * 0.22)
+} else {
+    console.log('IR: ' + salarioBruto * 0.27)
+}
