@@ -43,3 +43,32 @@ console.log(pizza.indexOf('Marguerita')); //procurar o índice de um item no Arr
  let menu3 = ['Home', 'Serviços', 'Portfólio', 'Links'];
  let menuServicos3 = menu3.push('Contato');
  console.log(menu3);
+
+
+ //Estrutura de repetição FOR
+ //Utilize o for para imprimir os elementos da lista groceryList com o console.log():
+ let groceryList = ['Arroz', 'Feijão', 'Alface', 'Melancia'];
+ for(let indice = 0; indice < groceryList.length; indice = indice + 1){
+    //console.log(groceryList); //Imprime o Array, na quantidade de elementos existentes
+    console.log(groceryList[indice]); //Imprime cada indice e o seu elemento
+    //console.log(indice); //Imprime os indices do array
+    //console.log(groceryList.length); //Imprime o tamanho do array
+ }
+
+ //For-Of
+ let almoçoList = ['Arroz', 'Feijão', 'Alface', 'Macarrão', 'Tomate'];
+ for(let comida of almoçoList){
+    console.log(comida)
+ }
+
+ //Utilize o for/of para imprimir os elementos da lista names com o console.log():
+ let names = ['João', 'Maria', 'Antônio', 'Margarida'];
+
+ for (let name of names){
+    console.log(name);
+ }
+
+ //****Entender melhor a diferença entre usar o For e usar o for-Of
+
+
+  
