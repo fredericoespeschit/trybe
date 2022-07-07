@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloco 6 - HTML e CSS: Forms, Flexbox e Responsivo</title>
+</head>
+
+<body>
+    <h1>Forms</h1>
+    <form action="" method="get" > <!-- method="POST" enctype="multipart/form-data" -->
+        <!-- input TEXT -->
+        <label for="input-name">Informe o seu nome</label><br>
+        <input type="text" name="name" placeholder="Informe o seu nome" required id="input-name">
+        <br><br>
+        <textarea name="" id="" cols="30" rows="10"></textarea><br><br>
+        <!-- checkbox -->
+        <input type="checkbox" name="esporte" value="fut" id="esporte-1" checked>Futebol <br>
+        <input type="checkbox" name="esporte" value="vol" id="esporte-2">Volei<br>
+        <input type="checkbox" name="esporte" value="pet" id="esporte-3">Peteca<br>
+        <label for="esporte-4"><input type="checkbox" name="esporte" value="bas" id="esporte-4">Basquete<br></label>
+        <br>
+        <!-- radio -->
+        <label for="hub-1"><input type="radio" name="hub" id="hub-1" value="sp">São Paulo <br></label>
+        <label for="hub-2"><input type="radio" name="hub" id="hub-2" value="rj">Rio de Janeiro <br></label>
+        <label for="hub-3"><input type="radio" name="hub" id="hub-3" value="bh">Belo Horizonte </label>
+        <br><br>
+        <!-- dropdown -->
+        <select name="estado" id="dropdown-estado">
+            <option value="estado-1">SP</option>
+            <option value="estado-2">RJ</option>
+            <option value="estado-3">MG</option>
+        </select>
+        <br><br>
+        <!-- input SENHA -->
+        <input type="password" name="senha" id="senha">
+        <br><br>
+        <!-- input ARQUIVO -->
+        <input type="file" name="arquivo" id="arquivo">
+        <br><br>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+
+</html>
