@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloco 6 - HTML e CSS: Forms, Flexbox e Responsivo</title>
+</head>
+
+<body>
+    <main>
+        <h1>Método .preventDefault()</h1>
+        <p>o método .preventDefault() previne que o comportamento padrão de um evento seja executado.</p>
+
+        <h2>Para fixar:</h2>
+        <ul>
+            <li>Crie um arquivo HTML index.html</li>
+            <li>Crie um arquivo Javascript script.js
+            </li>
+            <li>Em seu arquivo HTML
+                <ul>
+                    <li>Adicione o <code> <-script  src="script.js"></code> no final do body do HTML</li>
+                    <li>Copie os três elementos acima (a, input type="text", checkbox) em sua página</li>
+                </ul>
+            </li>
+            <li>Em seu arquivo Javascript
+                <ul>
+                    <li>Adicione os seletores abaixo no começo do arquivo</li>
+                </ul>
+            </li>
+        </ul>
+    </main>
+
+    <section id="exemplos">
+        <h3>Visualize abaixo alguns exemplos de elementos e seus comportamentos:</h3>
+        <!-- Esse código gera um elemento clicável que redireciona a pessoa usuária para o site da Trybe. O atributo target="_blank" indica que o comportamento do elemento é abrir o link em outra aba do navegador. -->
+        <a href="www.betrybe.com" target="_blank" id="href">TRYBE</a> <br><br>
+
+        <!-- Esse código gera uma caixa de input de texto. O comportamento desse elemento é capturar o(s) caractere(s) digitado(s) pela pessoa usuária e exibi-lo(s) dentro da caixa de texto, alterando o atributo "value" do input de acordo com o que é digitado. -->
+        <input type="text" id="input-text" placeholder="digite alguma coisa"/> <br>
+        <p id="letraA"></p>
+
+        <!-- Esse código gera um caixinha de input do tipo checkbox. O comportamento desse elemento é escutar o clique da pessoa usuária e marcar ou desmarcar a caixinha. -->
+        <input type="checkbox" id="input-checkbox" />
+    </section>
+        <script src="script.js"></script>
+</body>
+
+</html>
