@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Bloco 6 - HTML e CSS: Forms, Flexbox e Responsivo</title>
+</head>
+
+<body id="container" class="container bg-dark">
+    <header class="text-center p-3 my-5 bg-light rounded">
+        <h1 class="display-1">TrybeTrip</h1>
+        <small class="text-muted">TrybeTrip premia você com uma viagem totalmente paga e com várias opções de destino.
+
+        </small>
+    </header>
+    <main class="container bg-light p-5 my-5 rounded">
+        <form action="" method="get">
+            <div class="mb-3">
+                <label for="name" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="name" placeholder="frederico" minlength="10" maxlength="40">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">E-mail</label>
+                <input type="email" class="form-control" id="email" placeholder="name@example.com">
+            </div>
+
+            <div class="mb-2">
+                Destino Preferido:
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="option-1">
+                <label class="form-check-label" for="option-1">
+                    Cidade
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="option-2">
+                <label class="form-check-label" for="option-2">
+                    Campo
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="option-3">
+                <label class="form-check-label" for="option-3">
+                    Praia
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="option-4">
+                <label class="form-check-label" for="option-4">
+                    Montanha
+                </label>
+            </div>
+
+            <div class="mb-3">
+                <label for="textarea" class="form-label mt-3">Por que você deveria ser a pessoa desenvolvedora a ganhar
+                    o
+                    concurso TrybeTrip?</label>
+                <textarea class="form-control" id="textarea" rows="5" maxlength="500"></textarea>
+            </div>
+            <div class="mb-3">
+                Qual a melhor data para realizar sua viagem?
+                <label for="date">
+                    <input type="date" name="date" id="date">
+                </label>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="checkbox-1">
+                <label class="form-check-label" for="checkbox-1">
+                    Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="checkbox-2">
+                <label class="form-check-label" for="checkbox-2">
+                    Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
+                </label>
+            </div>
+
+
+            <div class="mb-3">
+                <label for="inputTypeFile" class="form-label"></label>
+                <input class="form-control" type="file" id="inputTypeFile">
+            </div>
+
+            <div class="mt-4">
+                <button class="btn btn-dark" type="submit" id="buttonSubmit">Enviar</button>
+                <button class="btn btn-light" type="reset" id="buttonReset">Limpar</button>
+            </div>
+        </form>
+    </main>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
