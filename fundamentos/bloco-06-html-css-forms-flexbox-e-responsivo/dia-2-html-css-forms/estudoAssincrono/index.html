@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+</head>
+<body>
+    <h1 class="display-4">Formulário</h1>
+    <form action="" method="get" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="nome-completo">Nome Completo:</label>
+            <input class="form-control" type="text" name="" id="nome-completo" placeholder="Digite seu nome" required>
+        </div>
+        <div class="form-group">
+            <label for="input-email">E-mail:</label>
+            <input class="form-control" type="email" name="" id="input-email" placeholder="Digite seu e-mail" required>
+        </div>
+        <div class="form-group">
+            <label for="">Estado onde você mora:</label>
+            <select class="form-control" name="estado" id="input-estado">
+                <option value="sp">São Paulo</option>
+                <option value="mg">Minas Gerais</option>
+                <option value="ap" selected>Amapá</option>
+                <option value="rs">Rio Grande do Sul</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <p>Selecione sua foto:</p>
+            <input class="form-control" type="file" name="foto" id="input-file">
+        </div>
+        <div class="form-group">
+            <p>Escreva algo sobre você</p>
+            <textarea class="form-control" name="sobre-mim" id="textarea-1" cols="30" rows="10"></textarea>
+        </div>
+        <div class="form-group">
+            <p>Digite sua senha:</p>
+            <label for="input-senha"></label>
+            <input class="form-control" type="password" name="senha" id="input-senha">
+        </div>
+        <button type="submit" class="btn btn-success mt-3">Enviar Formulário</button>
+    </form>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
