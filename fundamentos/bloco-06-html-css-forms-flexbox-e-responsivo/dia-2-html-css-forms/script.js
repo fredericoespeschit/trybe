@@ -3,7 +3,7 @@ const CHECKBOX_DOIS = document.querySelector('#checkbox-2');
 
 
 function buttonSubmit(eventButtonSubmit) {
-    eventButtonSubmit.preventDefault();
+   // eventButtonSubmit.preventDefault();
 }
 BUTTON.addEventListener('click', buttonSubmit);
 
